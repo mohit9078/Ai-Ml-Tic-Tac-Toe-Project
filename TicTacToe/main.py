@@ -54,4 +54,10 @@ if __name__ == "__main__":
             print("Game Over")
             break
 
+        # draw check: all 9 cells filled and no winner
+        if sum(px) + sum(po) == 9:
+            print("It's a draw!")
+            print("Game Over")
+            break
+
         turn = 1 - turn
